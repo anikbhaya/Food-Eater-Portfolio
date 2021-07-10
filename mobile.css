@@ -43,22 +43,41 @@
     }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 450px){
+    h1{
+        font-size: 25px; 
+     }
+
+     h2{
+         font-size: 20px;
+     }
+     
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-menu ul{
+        display: flex; 
+        justify-content: center;
+        padding: 0;
+    }
+
+    #order-food{
+        padding-top: 0;
+    }
     
-}
+    #social .items{
+        display: flex;
+        flex-direction: column;
+    }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+    #social .social-item{
+        margin-bottom: 20px;
+    }
 
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-
+    #newsletter input{
+        width: 90%;
+    }
 }
